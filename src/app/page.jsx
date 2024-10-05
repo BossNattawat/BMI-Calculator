@@ -48,7 +48,7 @@ export default function Home() {
             <label htmlFor="weight">
               <h3 className="my-3 font-semibold text-white">Weight (kg):</h3>
             </label>
-            <input className="input input-bordered w-full max-w-xs text-white" onChange={(e) => setWeight(e.target.value)} placeholder="Enter your weight..." type="number" name="weight"/>
+            <input className="input input-bordered w-full max-w-xs" onChange={(e) => setWeight(e.target.value)} placeholder="Enter your weight..." type="number" name="weight"/>
           </div>
           
           <div className="">
@@ -61,7 +61,7 @@ export default function Home() {
         </>
 
         <div className="flex justify-center my-10">
-          <button className="btn btn-accent text-xl" onClick={() => calculateBMI()}>Calculate</button>
+          <button className="btn btn-accent text-xl text-white" onClick={() => calculateBMI()}>Calculate</button>
         </div>
 
         <div className="text-center mt-10">

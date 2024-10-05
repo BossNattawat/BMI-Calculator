@@ -35,7 +35,7 @@ export default function Home() {
   }
 
   return (
-    <div className="min-w-full min-h-screen flex justify-center items-center">
+    <div className="min-w-full min-h-screen flex justify-center items-center bg-slate-950">
       <div className="border-4 rounded-3xl bg-slate-900 p-14">
 
         <div className="text-center text-2xl font-bold mb-10">
@@ -55,13 +55,13 @@ export default function Home() {
             <label htmlFor="height">
               <h3 className="my-3 font-semibold text-white">Height (cm):</h3>
             </label>
-            <input className="input input-bordered w-full max-w-xs text-white" onChange={(e) => setHeight(e.target.value)} placeholder="Enter your height..." type="number" name="height"/>
+            <input className="input input-bordered w-full max-w-xs" onChange={(e) => setHeight(e.target.value)} placeholder="Enter your height..." type="number" name="height"/>
           </div>
 
         </>
 
         <div className="flex justify-center my-10">
-          <button className="btn btn-accent text-xl text-white" onClick={() => calculateBMI()}>Calculate</button>
+          <button className="btn btn-accent text-xl" onClick={() => calculateBMI()}>Calculate</button>
         </div>
 
         <div className="text-center mt-10">
